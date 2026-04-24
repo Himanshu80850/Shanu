@@ -94,7 +94,7 @@
                 </button>
                 <h2 class="text-3xl font-extrabold text-slate-800">Job <span class="bg-gradient-to-r from-indigo-600 to-violet-500 bg-clip-text text-transparent">Details</span></h2>
 
-                <form @submit.prevent="proceedToChooseWorker()" class="space-y-5">
+                <form @submit.prevent="<input type="number" name="offerPrice" placeholder="Offer Price">proceedToChooseWorker()" class="space-y-5">
                     <div class="glass-panel p-6 rounded-[2rem] shadow-sm space-y-4">
                         <input required x-model="formData.name" type="text" placeholder="Full Name" class="w-full p-4 bg-white/60 border border-slate-200 rounded-2xl outline-none focus:border-indigo-500">
                         <textarea required x-model="formData.address" placeholder="Complete Address" class="w-full p-4 bg-white/60 border border-slate-200 rounded-2xl outline-none focus:border-indigo-500 min-h-[80px]"></textarea>
