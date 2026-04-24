@@ -94,64 +94,7 @@
                 </button>
                 <h2 class="text-3xl font-extrabold text-slate-800">Job <span class="bg-gradient-to-r from-indigo-600 to-violet-500 bg-clip-text text-transparent">Details</span></h2>
 
-                <div class="max-w-md mx-auto bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
-    <form @submit.prevent="proceedToChooseWorker()" class="space-y-6">
-        
-        <div class="space-y-1">
-            <label class="text-sm font-bold text-gray-700 ml-1">Full Name</label>
-            <input type="text" x-model="formData.fullName" placeholder="आपका नाम" 
-                   class="w-full p-4 bg-gray-50 border border-gray-200 rounded-2xl focus:bg-white focus:border-blue-500 transition-all outline-none font-medium">
-        </div>
-
-        <div class="space-y-1">
-            <label class="text-sm font-bold text-gray-700 ml-1">Complete Address</label>
-            <textarea x-model="formData.address" placeholder="पूरा पता यहाँ डालें" rows="2"
-                      class="w-full p-4 bg-gray-50 border border-gray-200 rounded-2xl focus:bg-white focus:border-blue-500 transition-all outline-none font-medium"></textarea>
-        </div>
-
-        <div class="space-y-1">
-            <label class="text-sm font-bold text-gray-700 ml-1">Service</label>
-            <div class="flex items-center gap-3 p-4 bg-blue-50 border border-blue-100 rounded-2xl">
-                <div class="bg-blue-600 p-2 rounded-lg text-white">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                    </svg>
-                </div>
-                <span class="text-lg font-bold text-blue-800">Puncture Repair</span>
-            </div>
-        </div>
-
-        <div class="py-4 space-y-4">
-            <div class="flex justify-between items-center">
-                <label class="text-sm font-bold text-gray-700">Set Your Price</label>
-                <span class="text-3xl font-black text-blue-600">₹<span x-text="formData.offerPrice">50</span></span>
-            </div>
-            
-            <input type="range" 
-                   min="50" max="1000" step="10"
-                   x-model="formData.offerPrice" 
-                   class="w-full h-3 bg-gray-200 rounded-full appearance-none cursor-pointer accent-blue-600">
-            
-            <div class="flex justify-between text-xs font-bold text-gray-400 uppercase tracking-tighter">
-                <span>Min: ₹50</span>
-                <span>Max: ₹1000</span>
-            </div>
-        </div>
-
-        <button type="submit" 
-                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-black py-5 rounded-2xl shadow-lg transition-all active:scale-95 flex items-center justify-center gap-3">
-            <span class="text-lg uppercase">Find Available Pros</span>
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg>
-        </button>
-
-    </form>
-</div>
-    <div>
-        <label class="block text-sm font-medium text-gray-700">Set Your Price</label>
-        <input type="number" x-model="formData.offerPrice" name="offerPrice" placeholder="Offer Price" class="w-full p-2 border rounded-md" required>
-    </div>
+                <form @submit.prevent="proceedToChooseWorker()" class="space-y-5">
                     <div class="glass-panel p-6 rounded-[2rem] shadow-sm space-y-4">
                         <input required x-model="formData.name" type="text" placeholder="Full Name" class="w-full p-4 bg-white/60 border border-slate-200 rounded-2xl outline-none focus:border-indigo-500">
                         <textarea required x-model="formData.address" placeholder="Complete Address" class="w-full p-4 bg-white/60 border border-slate-200 rounded-2xl outline-none focus:border-indigo-500 min-h-[80px]"></textarea>
