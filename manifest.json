@@ -8,16 +8,16 @@
   "theme_color": "#4F46E5",
   "icons": [
     {
-      "src": "icon-256x256.png",
-      "sizes": "256x256",
+      "src": "launchericon-192x192.png",
+      "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
-      "src": "KaamQuick_Logo.png",
+      "src": "launchericon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }
